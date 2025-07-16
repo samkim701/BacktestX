@@ -34,4 +34,4 @@ moving-average-backtester/
     └── AAPL.csv               # Sample downloaded data
 
 
-![alt text](<ChatGPT Image Jul 16, 2025, 07_40_59 PM.png>)
+![Strategy Flow Diagram](assets/project-diagram.png)
