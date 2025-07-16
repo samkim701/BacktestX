@@ -34,4 +34,4 @@ moving-average-backtester/
     └── AAPL.csv               # Sample downloaded data
 
 
-![Strategy Flow Diagram](assets/project-diagram.png)
+![Strategy Flow Diagram](assets/diagram.png)
