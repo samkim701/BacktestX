@@ -24,14 +24,5 @@
     2. pip install -r requirements.txt
     3. python backtester.py
 
-## Project Structure
-moving-average-backtester/
-│
-├── backtester.py              # Main script
-├── requirements.txt           # Dependencies
-├── README.md                  # Project info
-└── data/
-    └── AAPL.csv               # Sample downloaded data
-
 
 ![Strategy Flow Diagram](assets/diagram.png)
