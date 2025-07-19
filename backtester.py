@@ -37,7 +37,30 @@ def backtest(df):
     print(f"Max Drawdown: {max_drawdown:.2%}")
     
     return df
+##backtest(add_signals(download_data("AAPL", "2018-01-01", "2024-01-01")))
 
-backtest(add_signals(download_data("AAPL", "2018-01-01", "2024-01-01")))
+##Plotting
+def plot_returns(df, ticker):
+    plt.figure(figsize=(12, 6))
+    plt.plot(df['Cum_Buy_Hold'], label='Buy & Hold')
+    plt.plot(df['Cum_Strategy'], label='Strategy')
+    plt.title(f'{ticker} - Strategy vs Buy & Hold')
+    plt.legend()
+    plt.show()
 
 
+# -------------------------------------
+# 6. Main execution
+# -------------------------------------
+def main():
+    ticker = input("Enter a stock ticker: ").upper()
+    start = "2019-01-01"
+    end = "2024-01-01"
+    
+    df = download_data(ticker, start, end)
+    df = add_signals(df)
+    df = backtest(df)   
+    plot_returns(df, ticker)
+
+if __name__ == "__main__":
+    main()
