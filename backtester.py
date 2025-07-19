@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
+import os
 
 ## Load stock data
 def download_data(ticker, start, end):
@@ -46,8 +47,17 @@ def plot_returns(df, ticker):
     plt.plot(df['Cum_Buy_Hold'], label='Buy & Hold')
     plt.plot(df['Cum_Strategy'], label='Strategy')
     plt.title(f'{ticker} - Strategy vs Buy & Hold')
+    plt.xlabel('Date')
+    plt.ylabel('Cumulative Return')
     plt.legend()
-    plt.show()
+    plt.grid(True)
+    plt.tight_layout()
+    folder = "assets"
+    os.makedirs(folder, exist_ok=True)
+    file_name = f"{ticker}_10_50_Strategy vs buy_hold.png"
+    file_path = os.path.join(folder, file_name)
+    plt.savefig(file_path)
+    print("Plot saved as 10_50_Window_Strategy vs buy_hold.png")
 
 
 ## Main execution
