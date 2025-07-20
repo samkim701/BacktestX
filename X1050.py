@@ -54,10 +54,10 @@ def plot_returns(df, ticker):
     plt.tight_layout()
     folder = "assets"
     os.makedirs(folder, exist_ok=True)
-    file_name = f"{ticker}_10_50_Strategy vs buy_hold.png"
+    file_name = f"X1050 vs buy_hold - {ticker}.png"
     file_path = os.path.join(folder, file_name)
     plt.savefig(file_path)
-    print("Plot saved as 10_50_Window_Strategy vs buy_hold.png")
+    print(f"Plot saved as X1050 vs buy_hold - {ticker}.png")
 
 
 ## Main execution
