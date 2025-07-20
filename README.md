@@ -1,13 +1,17 @@
-# moving_average_backtester
-    Moving Average Backtester is a Python-based tool that analyzes and backtests a simple moving average crossover strategy on real historical stock data.
+## BacktestX
+    BacktestX is a modular Python backtesting framework that allows you to test different trading strategies on real historical stock data. Currently supports Moving Average Crossover, with more strategies (RSI, MACD) coming soon.
 
 ## Features
 -   Pulls real stock data from yfinance API
--   It will compute 10-day and 50-day moving averages
--   Tells when to buy and sell (signals)
--   Shows if the backtest is effective (buy/hold vs backtest strategy)
--   Calculates performance matrics: CAGR, Max Drawdown, Sharp Ratio
--   Visualization
+-   Modular design:
+    - Add your own strategies easily in `strategies/`.
+    - Supports buy/sell signals and trade visualization.
+    - Compares Strategy vs Buy & Hold performance.
+-   Calculates key metrics:
+    - CAGR
+    - Sharpe Ratio
+    - Max Drawdown
+-   Saves performance charts in `assets/` folder.
 
 ## Tech
 -   python 3
@@ -24,7 +28,7 @@
     2. pip install -r requirements.txt
     3. python backtester.py
 
-## **Sample Output**
+## Sample Output
 Total Strategy Return: 84.52%
 Total Buy & Hold Return: 126.45%
 CAGR: 10.23%
@@ -33,4 +37,6 @@ Sortino Ratio: 2.01
 Max Drawdown: -15.87%
 
 
-![Strategy Flow Diagram](assets/diagram.png)
+![Strategy Flow Diagram](assets/Moving_Averages_diagram.png)
+![Strategy Flow Diagram](assets/)
+![Strategy Flow Diagram](assets/)
