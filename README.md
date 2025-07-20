@@ -24,5 +24,13 @@
     2. pip install -r requirements.txt
     3. python backtester.py
 
+## **Sample Output**
+Total Strategy Return: 84.52%
+Total Buy & Hold Return: 126.45%
+CAGR: 10.23%
+Sharpe Ratio: 1.45
+Sortino Ratio: 2.01
+Max Drawdown: -15.87%
+
 
 ![Strategy Flow Diagram](assets/diagram.png)
