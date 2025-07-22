@@ -41,4 +41,3 @@
 
 ![Strategy Flow Diagram](assets/Moving_Averages_diagram.png)
 ![Strategy Flow Diagram](assets/RSI_diagram.png)
-![Strategy Flow Diagram](assets/MACD_diagram.png)
